@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback - SARA RESTAURANT</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2dfb3; /* beige tone */
+    }
+
+    /* HEADER */
+    header {
+      text-align: center;
+      background-color: #f2dfb3;
+      padding: 20px;
+    }
+
+    header img {
+      width: 180px;
+      border-radius: 10px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      margin: 10px 0 0 0;
+      color: black;
+    }
+
+    /* NAVIGATION BAR */
+    nav {
+      background-color: gray;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* MAIN CONTENT */
+    main {
+      padding: 30px;
+      max-width: 700px;
+      margin: 40px auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    main h2 {
+      text-align: center;
+      color: darkslateblue;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #333;
+      text-align: left;
+    }
+
+    input, textarea, select {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    button {
+      background-color: gray;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: darkslategray;
+    }
+
+    footer {
+      background-color: #f2dfb3;
+      text-align: center;
+      padding: 15px;
+      color: black;
+      font-weight: bold;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.jpg" alt="logo">
+  <h1>SARA RESTAURANT</h1>
+</header>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="administration.html">Administration</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="feedback.html">Feedback</a>
+</nav>
+
+<main>
+  <h2>We Value Your Feedback</h2>
+
+  <form>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="rating">Rate Your Experience:</label>
+    <select id="rating" name="rating" required>
+      <option value="">Select Rating</option>
+      <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+      <option value="4">⭐⭐⭐⭐ Good</option>
+      <option value="3">⭐⭐⭐ Average</option>
+      <option value="2">⭐⭐ Poor</option>
+      <option value="1">⭐ Very Poor</option>
+    </select>
+
+    <label for="message">Your Feedback:</label>
+    <textarea id="message" name="message" placeholder="Write your comments here..." required></textarea>
+
+    <button type="submit">Submit Feedback</button>
+  </form>
+</main>
+
+<footer>
+  © Rights; MAGESH BOOPATHI.M (212224230145)
+</footer>
+
+</body>
+</html>
